@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div (click)="srcToggle()" style="cursor:pointer">src {{ icon }}</div>
+<div *ngIf="isToggle" (click)="openAppFolder()" style="cursor:pointer">
+  app {{ icon }}
+  <ul *ngFor="let item of showAppData">
+    <li>{{ item }}</li>
+  </ul>
+</div>
